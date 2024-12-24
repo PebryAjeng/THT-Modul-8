@@ -1,0 +1,178 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.header {
+    background-color: #563111;
+    color: white;
+    padding: 1em 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1em;
+    font-weight: bold;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 0 1em;
+}
+
+.home-container {
+    display: flex; /* Menyusun elemen secara horizontal */
+    align-items: center; /* Memposisikan elemen secara vertikal di tengah */
+    justify-content: space-between; /* Memberikan jarak antara teks dan gambar */
+    padding: 2em;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 2em auto;
+    flex-wrap: wrap; /* Membuat elemen melipat pada layar kecil */
+}
+
+.home-container img {
+    max-width: 45%; /* Membatasi lebar gambar agar tetap proporsional */
+    height: auto;
+    border-radius: 10px;
+    margin-left: 1em; /* Memberi jarak antara teks dan gambar */
+    flex-shrink: 0; /* Mencegah gambar menyusut lebih kecil dari ukurannya */
+}
+
+.home-container h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+.home-container p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6em;
+}
+
+.home-container .btn {
+    display: inline-block;
+    background-color: #FF5722;
+    color: white;
+    padding: 0.8em 1.5em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1em;
+    margin-top: 1em;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .home-container {
+        flex-direction: column; /* Mengubah layout menjadi vertikal pada layar kecil */
+        text-align: center; /* Mengatur teks di tengah */
+    }
+
+    .home-container img {
+        max-width: 80%; /* Membatasi lebar gambar pada layar kecil */
+        margin: 1em auto; /* Memberi jarak secara otomatis */
+    }
+}
+
+/* Form Container */
+.form-container {
+    background: #fff;
+    padding: 2em;
+    margin: 2em auto;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+}
+
+.form-container img {
+    width: 100px;
+    margin: 0 auto 1em;
+    display: block;
+}
+
+.form-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1em;
+    font-size: 1.8em;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: #666;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.form-container button {
+    width: 100%;
+    background-color: #563111;
+    color: white;
+    border: none;
+    padding: 0.8em 1.5em;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #563111;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #563111;
+    color: white;
+    margin-top: 2em;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .form-container {
+        width: 90%;
+        margin: 2em auto;
+    }
+
+    .home-container {
+        padding: 1.5em;
+    }
+}
