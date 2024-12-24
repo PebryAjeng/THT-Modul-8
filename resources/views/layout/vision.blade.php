@@ -5,6 +5,6 @@
 @section('content')
 <div class="content-container">
     <h1>Our Vision</h1>
-    <p>Our vision is to become the world's most comprehensive digital library, bringing knowledge and stories to everyone, anywhere, anytime.</p>
+    <p>To become the world's leading digital library, empowering readers to discover, learn, and grow through access to unlimited knowledge.</p>
 </div>
 @endsection
